@@ -79,8 +79,17 @@ h1 {
 .item h4 {
   font-size: 1.5rem;
   color: #961616;
-  padding-top: 0.1rem;
+  padding-top: 0.7rem;
   padding-bottom: 0.1rem;
+}
+
+.item h5 {
+  font-size: 1.5rem;
+  color: #efefda;
+  background-color: #961616;
+  border-radius: 1.5rem;
+  padding: 0.7rem;
+  position: absolute;
 }
 
 .item a {
@@ -91,6 +100,17 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
+}
+
+.sold_out {
+  position: absolute;
+  align-self: center;
+  background-color: #961616;
+  border-radius: 1.5rem;
+  font-size: 1.3rem;
+  color: #efefda;
+  font-weight: bold;
+  padding: 0.8rem;
 }
 
 @media (max-width: 768px) {
