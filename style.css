@@ -9,5 +9,130 @@ img {
   display: block;
 }
 
+h1 {
+  color: #961616;
+  padding: 15px;
+  padding-top: 5rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+body {
+  background-color: rgb(254, 250, 238);
+}
+
+/*************** index **********************/
+
+.categories_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.categories_grid a {
+  color: #efefda;
+  background-color: #961616;
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: 3.5rem;
+  transition-duration: 0.3s;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.categories_grid a:hover {
+  font-size: 2.5rem;
+}
+
+/************* productlist **************/
+
+.item {
+  padding: 1.4rem;
+}
+
+.item h2 {
+  font-size: 1rem;
+  color: #961616;
+  padding-top: 1rem;
+}
+
+.item h3 {
+  font-size: 0.8rem;
+  color: #961616;
+  padding-bottom: 2rem;
+}
+
+.item h4 {
+  font-size: 1.5rem;
+  color: #961616;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.item a {
+  font-style: italic;
+}
+
+.product_list_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  /* padding-top: 3rem; */
+}
+
 @media (max-width: 768px) {
+  .product_list_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/******************* Menu *******************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #961616;
+  font-size: 1.6rem;
+  font-family: Josefin Sans;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-style: italic;
+}
+
+.menu a:hover {
+  font-size: 1.7rem;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
 }
