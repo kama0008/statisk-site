@@ -1,4 +1,6 @@
-let productId = 1530;
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get("id");
+
 let productContainer = document.querySelector(".productContainer");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
@@ -13,7 +15,7 @@ function showProduct(data) {
             <div class="product_inforation">
                 <h2>PRODUCT INFORMATION</h2>
                 <h3>Price:</h3>
-                <p>${data.price}</p>
+                <p>${data.price} ,- </p>
                 <h3>Coler:</h3>
                 <p>${data.colour1}</p>
                 <h3>Inventory nummber:</h3>
@@ -22,7 +24,7 @@ function showProduct(data) {
             <div>
                 <div class="rød">
                     <h2>${data.productdisplayname}</h2>
-                    <h3>${data.brandname}</h3>
+                    <h3> Brand name - ${data.brandname}</h3>
                 </div>
                 <div class="basket">
                     <h4>ADD TO BASKET</h4>
